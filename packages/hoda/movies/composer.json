@@ -1,0 +1,11 @@
+{
+    "name": "hoda/movies",
+    "description": "movies seeder",
+    "authors": [
+        {
+            "name": "hoda",
+            "email": "hoda.hussin@gmail.com"
+        }
+    ],
+    "require": {}
+}
