@@ -5,7 +5,7 @@ seed movies data from https://www.themoviedb.org/
 * `cp .env.example to .env`
 
 * set 
-  `DB_HOST:db
+  `
   DB_HOST=db
   DB_DATABASE=movies
   DB_USERNAME=root
