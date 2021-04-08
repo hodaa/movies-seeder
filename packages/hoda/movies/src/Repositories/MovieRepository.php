@@ -14,9 +14,9 @@ class MovieRepository extends Repository implements RepositoryInterface
     {
         $page_num = config('movie.record_number');
         $pages_count = ceil($page_num/20);
-        $movies =[];
 
-        for ($i=1; $i<=$pages_count; $i++) {
+        $movies =[];
+        for ($i=1; $i<= $pages_count; $i++) {
             $movies = array_merge($movies, $this->fetch('movie/top_rated', $i)->results);
         }
         return $movies;

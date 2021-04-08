@@ -17,7 +17,5 @@ class Repository
         return json_decode($response->getBody());
     }
 
-    public function sync()
-    {
-    }
+
 }

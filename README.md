@@ -2,11 +2,19 @@
 seed movies data from https://www.themoviedb.org/
 
 ## Installation
-
 * `cp .env.example to .env`
 
-set DB_HOST:db
+* set 
+  `DB_HOST:db
+  DB_HOST=db
+  DB_DATABASE=movies
+  DB_USERNAME=root
+  DB_PASSWORD=root`
+  
+If you want to use redis as your queue driver
+ * set `REDIS_HOST=redis`
 
+* `composer install`
 * `docker-compose build`
 * `docker-compose up -d`
 
@@ -14,19 +22,27 @@ If you got the problem of file permission ,you should go enter the php image
 `docker-compose exec php sh`
 then type `chown -R www-data:www-data storage/`
 
+
 * `php artisan migrate`
 
 
 ## Tools
 * PHP7.4
 * Laravel
-* Mysql
+* Mysql8
 * Docker
+* redis
+* phpunit
+
 
 
 ## Testing
+From PHP image 
+* `docker-compose exec php sh`
+
+run
 ```
-docker-compose exec php vendor/phpunit/bin
+vendor/phpunit/bin
 ```
 ## Commands
 ```
