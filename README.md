@@ -12,7 +12,7 @@ seed movies data from https://www.themoviedb.org/
   DB_PASSWORD=root`
   
 If you want to use redis as your queue driver
- * set `REDIS_HOST=redis`
+ - set `REDIS_HOST=redis`
 
 * `composer install`
 * `docker-compose build`
